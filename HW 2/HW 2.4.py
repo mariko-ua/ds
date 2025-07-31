@@ -6,12 +6,13 @@
 # e. Залишок від поділу першого на друге
 # f. True, якщо перше число більше або дорівнює другому, інакше False
 
+# немає обробки ділення на 0
+
 a = int(input("Введіть перше число:   "))
 b = int(input("Введіть друге число:   "))
-print(a + b)
-print(a - b)
-print(a * b)
-print(a / b)
-print(a % b)
-print(a>=b)
-
+print(f"a + b = ", a + b)
+print(f"a - b = ", a - b)
+print(f"a * b = ", a * b)
+print(f"a / b = ", a/b if b != 0 else "Помилка ділення")
+print(f"a % b = ", a%b if b != 0 else "Помилка ділення")
+print(f"a>=b:  ", a>=b)
